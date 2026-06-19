@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Água Doce ART & Soluções Hídricas: responsabilidade técnica, análises e consultoria especializada em água potável, piscinas e efluentes." />
+  <title>Água Doce ART & Soluções Hídricas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body class="bg-white font-body text-graphite antialiased">
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-deepBlue/95 shadow-lg shadow-deepBlue/10 backdrop-blur">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8" aria-label="Menu principal">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="Água Doce ART & Soluções Hídricas">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-deepBlue shadow-sm">
+            <!---->
+          <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2.25S5.25 9.64 5.25 15a6.75 6.75 0 0 0 13.5 0C18.75 9.64 12 2.25 12 2.25Zm0 17.25A4.5 4.5 0 0 1 7.5 15c0-2.72 2.74-6.72 4.5-8.96 1.76 2.24 4.5 6.24 4.5 8.96a4.5 4.5 0 0 1-4.5 4.5Z" />
+          </svg>
+          
+        </span>
+        <span class="leading-tight text-white">
+          <span class="block font-heading text-lg font-bold">Água Doce</span>
+          <span class="block text-xs font-medium tracking-wide text-white/80">ART & Soluções Hídricas</span>
+        </span>
+      </a>
+
+      <div class="hidden items-center gap-7 lg:flex">
+        <a href="#inicio" class="text-sm font-medium text-white/85 transition-all duration-300 hover:text-white">Início</a>
+        <a href="#sobre" class="text-sm font-medium text-white/85 transition-all duration-300 hover:text-white">Sobre Nós</a>
+        <a href="#servicos" class="text-sm font-medium text-white/85 transition-all duration-300 hover:text-white">Serviços</a>
+        <a href="#blog" class="text-sm font-medium text-white/85 transition-all duration-300 hover:text-white">Blog</a>
+        <a href="#contato" class="text-sm font-medium text-white/85 transition-all duration-300 hover:text-white">Contato</a>
+        <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20consultoria%20h%C3%ADdrica."
+           class="rounded-md bg-waterGreen px-4 py-2 text-sm font-bold uppercase tracking-wide text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#256628] hover:shadow-lg">
+          Solicitar Orçamento
+        </a>
+      </div>
+
+      <button id="menuButton" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-md border border-white/20 text-white transition-all duration-300 hover:bg-white/10 lg:hidden" aria-controls="mobileMenu" aria-expanded="false">
+        <span class="sr-only">Abrir menu</span>
+        <svg id="menuIconOpen" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg id="menuIconClose" class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-deepBlue px-4 pb-5 pt-2 lg:hidden">
+      <div class="mx-auto flex max-w-7xl flex-col gap-2">
+        <a href="#inicio" class="rounded-md px-3 py-3 text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white/10">Início</a>
+        <a href="#sobre" class="rounded-md px-3 py-3 text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white/10">Sobre Nós</a>
+        <a href="#servicos" class="rounded-md px-3 py-3 text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white/10">Serviços</a>
+        <a href="#blog" class="rounded-md px-3 py-3 text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white/10">Blog</a>
+        <a href="#contato" class="rounded-md px-3 py-3 text-sm font-medium text-white/90 transition-all duration-300 hover:bg-white/10">Contato</a>
+        <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20consultoria%20h%C3%ADdrica."
+           class="mt-2 rounded-md bg-waterGreen px-4 py-3 text-center text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#256628]">
+          Solicitar Orçamento
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="relative min-h-[calc(100vh-76px)] overflow-hidden bg-deepBlue">
+      <div class="hero-background absolute inset-0 bg-cover bg-center md:bg-right" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-deepBlue via-deepBlue/90 to-deepBlue/25" aria-hidden="true"></div>
+
+      <div class="relative mx-auto grid min-h-[calc(100vh-76px)] max-w-7xl items-center px-4 py-20 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <span class="mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur">
+            <span class="h-2 w-2 rounded-full bg-turquoise"></span>
+            Consultoria hídrica para empresas, condomínios e operações técnicas
+          </span>
+          <h1 class="font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">
+            Responsabilidade técnica que gera segurança e resultados sustentáveis.
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/88 sm:text-xl">
+            Atuamos com ART, análises e consultoria especializada em água potável, piscinas e efluentes.
+          </p>
+          <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+            <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20B2B%20com%20a%20%C3%81gua%20Doce."
+               class="inline-flex items-center justify-center rounded-md bg-waterGreen px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-xl shadow-black/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#256628]">
+              Solicitar Orçamento
+            </a>
+            <a href="#servicos"
+               class="inline-flex items-center justify-center rounded-md border border-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-deepBlue">
+              Nossos Serviços
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="bg-iceWhite py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <span class="text-sm font-bold uppercase tracking-[0.18em] text-waterGreen">Nossos Serviços</span>
+          <h2 class="mt-3 font-heading text-3xl font-bold text-deepBlue sm:text-4xl">Soluções técnicas para ambientes regulados.</h2>
+          <p class="mt-4 text-lg leading-8 text-graphite/75">
+            Atuação consultiva para reduzir riscos, organizar evidências técnicas e apoiar decisões com responsabilidade.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="group rounded-lg bg-white p-7 shadow-sm ring-1 ring-deepBlue/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-deepBlue text-white transition-all duration-300 group-hover:bg-waterGreen">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5A3.375 3.375 0 0 0 10.125 2.25H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-heading text-xl font-semibold text-deepBlue">ART Ambiental</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Emissão de ART para piscinas, efluentes e poços com documentação técnica organizada.</p>
+            <a href="#contato" class="mt-5 inline-block text-sm font-bold uppercase tracking-wide text-waterGreen transition-all duration-300 hover:text-deepBlue">Saiba Mais</a>
+          </article>
+
+          <article class="group rounded-lg bg-white p-7 shadow-sm ring-1 ring-deepBlue/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-deepBlue text-white transition-all duration-300 group-hover:bg-waterGreen">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5 10.5 6.75l4.5 4.5 5.25-5.25M15 6h5.25v5.25" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5h15" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-heading text-xl font-semibold text-deepBlue">Monitoramento de Efluentes</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Acompanhamento de conformidade, indicadores e proteção ambiental para operações.</p>
+            <a href="#contato" class="mt-5 inline-block text-sm font-bold uppercase tracking-wide text-waterGreen transition-all duration-300 hover:text-deepBlue">Saiba Mais</a>
+          </article>
+
+          <article class="group rounded-lg bg-white p-7 shadow-sm ring-1 ring-deepBlue/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-deepBlue text-white transition-all duration-300 group-hover:bg-waterGreen">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75s-6 6.637-6 10.875a6 6 0 1 0 12 0C18 10.387 12 3.75 12 3.75Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 16.125c.563.75 1.313 1.125 2.25 1.125s1.688-.375 2.25-1.125" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-heading text-xl font-semibold text-deepBlue">Análises de Água Potável</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Qualidade e segurança para consumo com laudos claros e orientação especializada.</p>
+            <a href="#contato" class="mt-5 inline-block text-sm font-bold uppercase tracking-wide text-waterGreen transition-all duration-300 hover:text-deepBlue">Saiba Mais</a>
+          </article>
+
+          <article class="group rounded-lg bg-white p-7 shadow-sm ring-1 ring-deepBlue/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <div class="flex h-12 w-12 items-center justify-center rounded-md bg-deepBlue text-white transition-all duration-300 group-hover:bg-waterGreen">
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75c2.25-1.5 4.5-1.5 6.75 0s4.5 1.5 6.75 0" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5c2.25-1.5 4.5-1.5 6.75 0s4.5 1.5 6.75 0" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 10.5h12l-1.5 4.5h-9L6 10.5Z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 10.5V5.25a2.25 2.25 0 0 1 4.5 0V6" />
+              </svg>
+            </div>
+            <h3 class="mt-6 font-heading text-xl font-semibold text-deepBlue">Controle de Piscinas</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Orientação técnica para manutenção, rotina de controle e segurança dos usuários.</p>
+            <a href="#contato" class="mt-5 inline-block text-sm font-bold uppercase tracking-wide text-waterGreen transition-all duration-300 hover:text-deepBlue">Saiba Mais</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="precos" class="bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-3xl text-center">
+          <span class="text-sm font-bold uppercase tracking-[0.18em] text-waterGreen">Atendimento pessoa física</span>
+          <h2 class="mt-3 font-heading text-3xl font-bold text-deepBlue sm:text-4xl">Tabela rápida para solicitações pontuais.</h2>
+          <p class="mt-4 text-lg leading-8 text-graphite/75">
+            Escolha o tipo de análise e envie sua solicitação diretamente pelo WhatsApp com a mensagem pronta.
+          </p>
+        </div>
+
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-lg border border-deepBlue/10 bg-iceWhite p-8 transition-all duration-300 hover:-translate-y-2 hover:border-waterGreen/40 hover:shadow-xl">
+            <h3 class="font-heading text-2xl font-semibold text-deepBlue">Análise Básica</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Parâmetros essenciais para verificação inicial de qualidade da água.</p>
+            <p class="mt-7 font-heading text-4xl font-bold text-deepBlue">R$ 180</p>
+            <p class="mt-1 text-sm text-graphite/60">Valor fixo para atendimento padrão.</p>
+            <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20quero%20solicitar%20a%20An%C3%A1lise%20B%C3%A1sica%20de%20R%24180."
+               class="mt-8 inline-flex w-full items-center justify-center rounded-md bg-waterGreen px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#256628]">
+              Solicitar pelo WhatsApp
+            </a>
+          </article>
+
+          <article class="relative rounded-lg border-2 border-waterGreen bg-white p-8 shadow-xl shadow-deepBlue/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <span class="absolute right-6 top-6 rounded-full bg-waterGreen px-3 py-1 text-xs font-bold uppercase tracking-wide text-white">Mais solicitado</span>
+            <h3 class="font-heading text-2xl font-semibold text-deepBlue">Análise Completa</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Avaliação ampliada para consumo, rotina residencial e tomadas de decisão.</p>
+            <p class="mt-7 font-heading text-4xl font-bold text-deepBlue">R$ 320</p>
+            <p class="mt-1 text-sm text-graphite/60">Inclui orientação técnica após resultado.</p>
+            <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20quero%20solicitar%20a%20An%C3%A1lise%20Completa%20de%20R%24320."
+               class="mt-8 inline-flex w-full items-center justify-center rounded-md bg-waterGreen px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#256628]">
+              Solicitar pelo WhatsApp
+            </a>
+          </article>
+
+          <article class="rounded-lg border border-deepBlue/10 bg-iceWhite p-8 transition-all duration-300 hover:-translate-y-2 hover:border-waterGreen/40 hover:shadow-xl">
+            <h3 class="font-heading text-2xl font-semibold text-deepBlue">Piscina Residencial</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Análise e orientação para controle químico e manutenção preventiva.</p>
+            <p class="mt-7 font-heading text-4xl font-bold text-deepBlue">R$ 250</p>
+            <p class="mt-1 text-sm text-graphite/60">Indicado para demandas de pessoa física.</p>
+            <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20quero%20solicitar%20o%20servi%C3%A7o%20Piscina%20Residencial%20de%20R%24250."
+               class="mt-8 inline-flex w-full items-center justify-center rounded-md bg-waterGreen px-5 py-3 text-sm font-bold uppercase tracking-wide text-white transition-all duration-300 hover:bg-[#256628]">
+              Solicitar pelo WhatsApp
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="bg-iceWhite py-20 sm:py-24">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+          <span class="text-sm font-bold uppercase tracking-[0.18em] text-waterGreen">Sobre a profissional</span>
+          <h2 class="mt-3 font-heading text-3xl font-bold text-deepBlue sm:text-4xl">Quem assina os seus resultados?</h2>
+          <p class="mt-6 text-lg leading-8 text-graphite/78">
+            A Água Doce ART & Soluções Hídricas é conduzida por profissional com mais de 15 anos de experiência em análises, responsabilidade técnica e conformidade ambiental.
+          </p>
+          <p class="mt-4 text-lg leading-8 text-graphite/78">
+            Com CRQ ativo e atuação focada em segurança operacional, a consultoria apoia empresas, condomínios e operações que precisam de orientação técnica confiável, documentação consistente e decisões sustentáveis.
+          </p>
+          <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20especialista%20sobre%20responsabilidade%20t%C3%A9cnica%20e%20solu%C3%A7%C3%B5es%20h%C3%ADdricas."
+             class="mt-8 inline-flex items-center justify-center rounded-md bg-deepBlue px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#082f49]">
+            Falar com a Especialista
+          </a>
+        </div>
+
+        <figure class="relative">
+          <div class="absolute -left-4 -top-4 h-24 w-24 rounded-lg bg-turquoise/20" aria-hidden="true"></div>
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+               alt="Profissional especialista em laboratório analisando resultados técnicos"
+               class="relative aspect-[4/5] w-full rounded-lg object-cover shadow-2xl shadow-deepBlue/20" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="blog" class="bg-white py-20 sm:py-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div class="max-w-3xl">
+            <span class="text-sm font-bold uppercase tracking-[0.18em] text-waterGreen">Blog</span>
+            <h2 class="mt-3 font-heading text-3xl font-bold text-deepBlue sm:text-4xl">Conteúdo técnico para decisões melhores.</h2>
+          </div>
+          <a href="#contato" class="text-sm font-bold uppercase tracking-wide text-waterGreen transition-all duration-300 hover:text-deepBlue">Receber orientação</a>
+        </div>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="rounded-lg border border-deepBlue/10 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p class="text-sm font-bold uppercase tracking-wide text-turquoise">Conformidade</p>
+            <h3 class="mt-3 font-heading text-xl font-semibold text-deepBlue">Quando a ART ambiental é necessária?</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Entenda como a responsabilidade técnica reduz riscos e organiza a operação.</p>
+          </article>
+          <article class="rounded-lg border border-deepBlue/10 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p class="text-sm font-bold uppercase tracking-wide text-turquoise">Efluentes</p>
+            <h3 class="mt-3 font-heading text-xl font-semibold text-deepBlue">Indicadores que sua empresa precisa acompanhar.</h3>
+            <p class="mt-3 leading-7 text-graphite/72">Monitoramento recorrente favorece previsibilidade e proteção ambiental.</p>
+          </article>
+          <article class="rounded-lg border border-deepBlue/10 p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+            <p class="text-sm font-bold uppercase tracking-wide text-turquoise">Água potável</p>
+            <h3 class="mt-3 font-heading text-xl font-semibold text-deepBlue">Laudos claros apoiam decisões rápidas.</h3>
+            <p class="mt-3 leading-7 text-graphite/72">A análise correta transforma dados laboratoriais em ação técnica confiável.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contato" class="bg-deepBlue text-white">
+    <section class="border-b border-white/10 bg-[#082f49] py-10">
+      <div class="mx-auto grid max-w-7xl gap-6 px-4 sm:grid-cols-2 sm:px-6 lg:grid-cols-4 lg:px-8">
+        <div class="flex items-center gap-4">
+          <span class="flex h-12 w-12 items-center justify-center rounded-md bg-turquoise text-white">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+          </span>
+          <div>
+            <p class="font-heading text-2xl font-bold">+15</p>
+            <p class="text-sm text-white/75">Anos de Experiência</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-12 w-12 items-center justify-center rounded-md bg-turquoise text-white">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25 4.5 5.25v5.25c0 5.25 3.75 9 7.5 11.25 3.75-2.25 7.5-6 7.5-11.25V5.25L12 2.25Z" />
+            </svg>
+          </span>
+          <div>
+            <p class="font-heading text-lg font-bold">Responsável Técnica</p>
+            <p class="text-sm text-white/75">Profissional habilitada</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-12 w-12 items-center justify-center rounded-md bg-turquoise text-white">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 0 3 0m-3 0a1.5 1.5 0 0 1 3 0m-3 0H6.75A2.25 2.25 0 0 1 4.5 16.5v-6.75A2.25 2.25 0 0 1 6.75 7.5h10.5a2.25 2.25 0 0 1 2.25 2.25v6.75a2.25 2.25 0 0 1-2.25 2.25h-1.5m-4.5 0h4.5m0 0a1.5 1.5 0 0 0 3 0m-3 0a1.5 1.5 0 0 1 3 0" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 12h3m3 0h3" />
+            </svg>
+          </span>
+          <div>
+            <p class="font-heading text-lg font-bold">Atendimento Rápido</p>
+            <p class="text-sm text-white/75">Triagem objetiva por WhatsApp</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="flex h-12 w-12 items-center justify-center rounded-md bg-turquoise text-white">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5m-3 0v5.61l-5.64 8.46a1.5 1.5 0 0 0 1.25 2.33h10.28a1.5 1.5 0 0 0 1.25-2.33l-5.64-8.46V3.75" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 15.75h7.5" />
+            </svg>
+          </span>
+          <div>
+            <p class="font-heading text-lg font-bold">Laboratório Acreditado</p>
+            <p class="text-sm text-white/75">Processos técnicos confiáveis</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 md:grid-cols-3 lg:px-8">
+        <div>
+          <h2 class="font-heading text-2xl font-bold">Água Doce</h2>
+          <p class="mt-3 max-w-sm leading-7 text-white/75">
+            ART, análises e consultoria hídrica para empresas que precisam de segurança técnica e conformidade.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-heading text-lg font-semibold">Contato</h3>
+          <ul class="mt-4 space-y-3 text-white/75">
+            <li><a class="transition-all duration-300 hover:text-white" href="tel:+5592999999999">(92) 99999-9999</a></li>
+            <li><a class="transition-all duration-300 hover:text-white" href="mailto:contato@aguadoceart.com.br">contato@aguadoceart.com.br</a></li>
+            <li>Atendimento corporativo e pessoa física sob demanda</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-heading text-lg font-semibold">Redes Sociais</h3>
+          <div class="mt-4 flex gap-3">
+            <a href="#" class="flex h-11 w-11 items-center justify-center rounded-md border border-white/20 text-white transition-all duration-300 hover:bg-white hover:text-deepBlue" aria-label="Instagram">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M7.8 2.25h8.4A5.56 5.56 0 0 1 21.75 7.8v8.4a5.56 5.56 0 0 1-5.55 5.55H7.8a5.56 5.56 0 0 1-5.55-5.55V7.8A5.56 5.56 0 0 1 7.8 2.25Zm8.4 17.7a3.75 3.75 0 0 0 3.75-3.75V7.8a3.75 3.75 0 0 0-3.75-3.75H7.8A3.75 3.75 0 0 0 4.05 7.8v8.4a3.75 3.75 0 0 0 3.75 3.75h8.4ZM12 7.35A4.65 4.65 0 1 1 12 16.65 4.65 4.65 0 0 1 12 7.35Zm0 7.5A2.85 2.85 0 1 0 12 9.15a2.85 2.85 0 0 0 0 5.7Zm5.06-7.95a1.09 1.09 0 1 1 0-2.18 1.09 1.09 0 0 1 0 2.18Z" />
+              </svg>
+            </a>
+            <a href="#" class="flex h-11 w-11 items-center justify-center rounded-md border border-white/20 text-white transition-all duration-300 hover:bg-white hover:text-deepBlue" aria-label="LinkedIn">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M6.94 8.98H3.67V20.25h3.27V8.98ZM5.3 3.75a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8Zm5.6 5.23H7.77V20.25h3.26v-5.9c0-1.55.29-3.05 2.21-3.05 1.9 0 1.93 1.78 1.93 3.15v5.8h3.26v-6.54c0-3.2-.69-5.66-4.43-5.66a3.88 3.88 0 0 0-3.49 1.92h-.04l.04-.99Z" />
+              </svg>
+            </a>
+            <a href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20%C3%81gua%20Doce%20ART%20%26%20Solu%C3%A7%C3%B5es%20H%C3%ADdricas."
+               class="flex h-11 w-11 items-center justify-center rounded-md border border-white/20 text-white transition-all duration-300 hover:bg-white hover:text-deepBlue" aria-label="WhatsApp">
+              <svg class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2.25a9.7 9.7 0 0 0-8.39 14.56L2.25 21.75l5.06-1.33a9.69 9.69 0 1 0 4.73-18.17Zm0 17.56a7.82 7.82 0 0 1-3.99-1.09l-.29-.17-3 .79.8-2.92-.19-.3a7.84 7.84 0 1 1 6.67 3.69Zm4.29-5.87c-.23-.12-1.39-.69-1.61-.77-.22-.08-.38-.12-.54.12-.16.23-.62.77-.76.93-.14.16-.28.18-.51.06-.23-.12-.99-.36-1.88-1.16-.7-.62-1.16-1.38-1.3-1.62-.14-.23-.02-.36.1-.48.11-.11.23-.28.35-.42.12-.14.16-.23.23-.39.08-.16.04-.3-.02-.42-.06-.12-.54-1.31-.74-1.79-.2-.47-.39-.4-.54-.41h-.46c-.16 0-.42.06-.64.3-.22.23-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.7 2.59 4.12 3.63.58.25 1.03.4 1.38.51.58.18 1.1.16 1.52.1.46-.07 1.39-.57 1.59-1.12.2-.55.2-1.03.14-1.12-.06-.1-.21-.16-.44-.28Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-10 max-w-7xl px-4 text-sm text-white/55 sm:px-6 lg:px-8">
+        © 2026 Água Doce ART & Soluções Hídricas. Todos os direitos reservados.
+      </div>
+    </section>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+
+  <!-- Placeholder para futura injeção do widget de IA. -->
+</body>
+</html>
