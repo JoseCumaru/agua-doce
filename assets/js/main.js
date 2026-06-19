@@ -32,3 +32,20 @@ if ('IntersectionObserver' in window) {
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+
+// Header color change on scroll
+const header = document.querySelector('header');
+const heroSection = document.getElementById('inicio');
+
+function updateHeaderOnScroll() {
+  if (!header || !heroSection) return;
+  if (window.scrollY > heroSection.offsetHeight) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+}
+
+window.addEventListener('scroll', updateHeaderOnScroll);
+// Run once in case page starts scrolled
+updateHeaderOnScroll();
