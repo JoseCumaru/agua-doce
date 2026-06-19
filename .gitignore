@@ -1,0 +1,29 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backup files
+*~
+*.bak
+*.tmp
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Build output
+/dist/
+/build/
+
+# Environment variables
+.env
+.env.local
+
+# Source maps
+*.map
+
+# Project notes
+PROJECT_NOTES.md
