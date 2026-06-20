@@ -4,6 +4,7 @@ const menuIconOpen = document.getElementById('menuIconOpen');
 const menuIconClose = document.getElementById('menuIconClose');
 const mobileLinks = mobileMenu.querySelectorAll('a');
 const revealItems = document.querySelectorAll('.reveal');
+const header = document.querySelector('header');
 
 function toggleMenu(forceClose = false) {
   const isOpen = !mobileMenu.classList.contains('hidden');
@@ -13,6 +14,7 @@ function toggleMenu(forceClose = false) {
   menuIconOpen.classList.toggle('hidden', shouldOpen);
   menuIconClose.classList.toggle('hidden', !shouldOpen);
   menuButton.setAttribute('aria-expanded', String(shouldOpen));
+  header.classList.toggle('menu-open', shouldOpen);
 }
 
 menuButton.addEventListener('click', () => toggleMenu());
@@ -34,9 +36,6 @@ if ('IntersectionObserver' in window) {
 }
 
 // Header color change on scroll
-const header = document.querySelector('header');
-const heroSection = document.getElementById('inicio');
-
 function updateHeaderOnScroll() {
   if (!header || !heroSection) return;
   if (window.scrollY > heroSection.offsetHeight) {
@@ -46,6 +45,6 @@ function updateHeaderOnScroll() {
   }
 }
 
+const heroSection = document.getElementById('inicio');
 window.addEventListener('scroll', updateHeaderOnScroll);
-// Run once in case page starts scrolled
 updateHeaderOnScroll();

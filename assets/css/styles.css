@@ -406,7 +406,7 @@ html {
   }
 }
 
-/* Header scroll effect */
+/* HEADER SCROLL EFFECTS */
 header.scrolled {
   background-color: #ffffff96;
   backdrop-filter: 0.3s ease;
@@ -417,7 +417,7 @@ header.scrolled .mobile-link {
   color: var(--deep-blue);
 }
 header.scrolled .btn-primary {
-  background: var(--deep-blue);
+  background: var(--water-green);
   color: #fff;
 }
 header.scrolled .social-link {
@@ -454,4 +454,26 @@ header.scrolled .logo-text-secondary {
 
 header {
   transition: background-color 0.3s ease, backdrop-filter 0.3s ease, border-color 0.3s ease;
+}
+
+/* Header scrolled + menu open */
+header.scrolled.menu-open #menuButton {
+  border-color: rgba(0,0,0,0.2);
+  color: var(--deep-blue);
+}
+header.scrolled.menu-open #menuButton:hover {
+  background-color: rgba(0,0,0,0.05);
+}
+header.scrolled.menu-open .mobile-link {
+  color: #fff;
+}
+header.scrolled.menu-open .mobile-link:hover {
+  background: rgba(255,255,255,0.1);
+}
+header.scrolled #menuButton {
+  color: var(--deep-blue);
+  border-color: rgba(0,0,0,0.2);
+}
+header.scrolled #menuButton:hover {
+  background-color: rgba(0,0,0,0.05);
 }
