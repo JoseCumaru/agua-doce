@@ -2,11 +2,14 @@ const menuButton = document.getElementById('menuButton');
 const mobileMenu = document.getElementById('mobileMenu');
 const menuIconOpen = document.getElementById('menuIconOpen');
 const menuIconClose = document.getElementById('menuIconClose');
-const mobileLinks = mobileMenu.querySelectorAll('a');
+const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll('a') : [];
 const revealItems = document.querySelectorAll('.reveal');
 const header = document.querySelector('header');
+const headerTrigger = document.querySelector('[data-header-trigger]') || document.getElementById('inicio') || document.querySelector('main > section');
 
 function toggleMenu(forceClose = false) {
+  if (!header || !menuButton || !mobileMenu || !menuIconOpen || !menuIconClose) return;
+
   const isOpen = !mobileMenu.classList.contains('hidden');
   const shouldOpen = forceClose ? false : !isOpen;
 
@@ -17,7 +20,10 @@ function toggleMenu(forceClose = false) {
   header.classList.toggle('menu-open', shouldOpen);
 }
 
-menuButton.addEventListener('click', () => toggleMenu());
+if (menuButton) {
+  menuButton.addEventListener('click', () => toggleMenu());
+}
+
 mobileLinks.forEach((link) => link.addEventListener('click', () => toggleMenu(true)));
 
 if ('IntersectionObserver' in window) {
@@ -35,16 +41,13 @@ if ('IntersectionObserver' in window) {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
 
-// Header color change on scroll
 function updateHeaderOnScroll() {
-  if (!header || !heroSection) return;
-  if (window.scrollY > heroSection.offsetHeight) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
+  if (!header || !headerTrigger) return;
+
+  const triggerEnd = headerTrigger.offsetTop + headerTrigger.offsetHeight;
+  header.classList.toggle('scrolled', window.scrollY > triggerEnd);
 }
 
-const heroSection = document.getElementById('inicio');
 window.addEventListener('scroll', updateHeaderOnScroll);
+window.addEventListener('resize', updateHeaderOnScroll);
 updateHeaderOnScroll();

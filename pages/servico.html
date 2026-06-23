@@ -11,31 +11,31 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./assets/js/tailwind-config.js"></script>
-  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <script src="../assets/js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
 <body class="bg-white font-body text-graphite antialiased">
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-deepBlue/82 backdrop-blur-xl">
     <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Menu principal">
-      <a href="./index.html#inicio" class="flex items-center gap-3" aria-label="Água Doce ART & Soluções Hídricas">
+      <a href="../index.html#inicio" class="flex items-center gap-3" aria-label="Água Doce ART & Soluções Hídricas">
         <span class="flex h-11 w-11 items-center justify-center rounded-full bg-white text-deepBlue shadow-sm">
           <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M12 2.25S5.25 9.64 5.25 15a6.75 6.75 0 0 0 13.5 0C18.75 9.64 12 2.25 12 2.25Zm0 17.25A4.5 4.5 0 0 1 7.5 15c0-2.72 2.74-6.72 4.5-8.96 1.76 2.24 4.5 6.24 4.5 8.96a4.5 4.5 0 0 1-4.5 4.5Z" />
           </svg>
         </span>
-        <span class="leading-tight text-white">
+        <span class="leading-tight logo-text">
           <span class="block font-heading text-lg font-bold">Água Doce</span>
-          <span class="block text-xs font-medium tracking-wide text-white/78">ART & Soluções Hídricas</span>
+          <span class="block text-xs font-medium tracking-wide logo-text-secondary">ART & Soluções Hídricas</span>
         </span>
       </a>
 
       <div class="hidden items-center gap-7 lg:flex">
-        <a href="./index.html#inicio" class="nav-link">Início</a>
-        <a href="./index.html#sobre" class="nav-link">Sobre Nós</a>
-        <a href="./index.html#servicos" class="nav-link">Serviços</a>
-        <a href="./index.html#blog" class="nav-link">Blog</a>
-        <a href="./index.html#contato" class="nav-link">Contato</a>
+        <a href="../index.html#inicio" class="nav-link">Início</a>
+        <a href="./sobre.html" class="nav-link">Sobre Nós</a>
+        <a href="../index.html#servicos" class="nav-link">Serviços</a>
+        <a href="../index.html#blog" class="nav-link">Blog</a>
+        <a href="../index.html#contato" class="nav-link">Contato</a>
         <a id="headerCta" href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20consultoria%20h%C3%ADdrica." class="btn btn-primary btn-small">
           Solicitar Orçamento
         </a>
@@ -54,11 +54,11 @@
 
     <div id="mobileMenu" class="hidden border-t border-white/10 bg-deepBlue px-4 pb-5 pt-2 lg:hidden">
       <div class="mx-auto flex max-w-7xl flex-col gap-2">
-        <a href="./index.html#inicio" class="mobile-link">Início</a>
-        <a href="./index.html#sobre" class="mobile-link">Sobre Nós</a>
-        <a href="./index.html#servicos" class="mobile-link">Serviços</a>
-        <a href="./index.html#blog" class="mobile-link">Blog</a>
-        <a href="./index.html#contato" class="mobile-link">Contato</a>
+        <a href="../index.html#inicio" class="mobile-link">Início</a>
+        <a href="./sobre.html" class="mobile-link">Sobre Nós</a>
+        <a href="../index.html#servicos" class="mobile-link">Serviços</a>
+        <a href="../index.html#blog" class="mobile-link">Blog</a>
+        <a href="../index.html#contato" class="mobile-link">Contato</a>
         <a id="mobileHeaderCta" href="https://wa.me/5592999999999?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20consultoria%20h%C3%ADdrica." class="btn btn-primary mt-2">
           Solicitar Orçamento
         </a>
@@ -67,11 +67,11 @@
   </header>
 
   <main>
-    <section class="relative min-h-[72svh] overflow-hidden bg-deepBlue pt-28 text-white">
+    <section data-header-trigger class="relative min-h-[72svh] overflow-hidden bg-deepBlue pt-28 text-white">
       <div class="service-hero-background absolute inset-0 bg-cover bg-center opacity-30" aria-hidden="true"></div>
       <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,28,45,0.98)_0%,rgba(11,60,93,0.9)_55%,rgba(11,60,93,0.45)_100%)]" aria-hidden="true"></div>
       <div class="relative mx-auto flex min-h-[calc(72svh-7rem)] max-w-7xl flex-col justify-end px-4 pb-14 sm:px-6 lg:px-8">
-        <a href="./index.html#servicos" class="mb-10 inline-flex w-fit items-center gap-2 font-heading text-sm font-bold uppercase text-white/74 transition hover:text-white">
+        <a href="../index.html#servicos" class="mb-10 inline-flex w-fit items-center gap-2 font-heading text-sm font-bold uppercase text-white/74 transition hover:text-white">
           <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
           </svg>
@@ -83,7 +83,7 @@
           <p id="serviceSubtitle" class="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl"></p>
           <div class="mt-9 flex flex-col gap-4 sm:flex-row">
             <a id="serviceCta" href="https://wa.me/5592999999999" class="btn btn-primary">Solicitar Orçamento</a>
-            <a href="./index.html#precos" class="btn btn-ghost">Ver tabela B2C</a>
+            <a href="../index.html#precos" class="btn btn-ghost">Ver tabela B2C</a>
           </div>
         </div>
       </div>
@@ -155,7 +155,7 @@
     </div>
   </footer>
 
-  <script src="./assets/js/main.js" defer></script>
-  <script src="./assets/js/service-page.js" defer></script>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/service-page.js" defer></script>
 </body>
 </html>

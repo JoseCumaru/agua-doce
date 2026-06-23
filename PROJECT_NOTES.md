@@ -7,7 +7,7 @@ Landing page institucional B2B criada em HTML, Tailwind CDN, CSS e JavaScript se
 Arquivos principais:
 
 - `index.html`: pagina inicial com hero, servicos, tabela B2C, sobre, blog e footer.
-- `servico.html`: pagina dinamica de detalhe de servico.
+- `pages/servico.html`: pagina dinamica de detalhe de servico.
 - `assets/css/styles.css`: CSS proprio, incluindo backgrounds locais.
 - `assets/js/tailwind-config.js`: configuracao Tailwind CDN.
 - `assets/js/main.js`: menu mobile.
@@ -19,15 +19,15 @@ Arquivos principais:
 ## Decisoes
 
 - Os detalhes dos servicos usam uma unica pagina dinamica:
-  - `servico.html?servico=analises-agua`
-  - `servico.html?servico=analises-efluentes`
-  - `servico.html?servico=filtros-reuso-agua`
-  - `servico.html?servico=art-responsabilidade-tecnica`
-  - `servico.html?servico=controle-hidrossanitario-piscinas`
-  - `servico.html?servico=limpeza-reservatorios-laudo`
+  - `pages/servico.html?servico=analises-agua`
+  - `pages/servico.html?servico=analises-efluentes`
+  - `pages/servico.html?servico=filtros-reuso-agua`
+  - `pages/servico.html?servico=art-responsabilidade-tecnica`
+  - `pages/servico.html?servico=controle-hidrossanitario-piscinas`
+  - `pages/servico.html?servico=limpeza-reservatorios-laudo`
 
 - A secao tecnica dos filtros aparece somente em:
-  - `servico.html?servico=filtros-reuso-agua`
+  - `pages/servico.html?servico=filtros-reuso-agua`
 
 - A pagina de filtros inclui:
   - "Principais filtros"

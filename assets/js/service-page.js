@@ -64,7 +64,7 @@ const services = {
     filterProducts: [
       {
         title: "Filtro de fibra de vidro para caixa d'água 2.000 L/H com válvula semiautomática",
-        image: './assets/images/filtro1.png',
+        image: '../assets/images/filtro1.png',
         imageAlt: "Filtro de fibra de vidro com válvula semiautomática para tratamento de água",
         media: ['Zeólita para remoção de ferro e manganês', 'Dolomita', 'Carvão ativado'],
         composition: [
@@ -79,7 +79,7 @@ const services = {
       },
       {
         title: "Filtro de fibra de vidro para caixa d'água 2.000 L/H com válvula automática",
-        image: './assets/images/filtro2.png',
+        image: '../assets/images/filtro2.png',
         imageAlt: "Filtro de fibra de vidro com válvula automática para tratamento de água",
         media: ['Zeólita para remoção de ferro e manganês', 'Dolomita', 'Carvão ativado com prata coloidal'],
         composition: [
