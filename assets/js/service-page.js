@@ -2,162 +2,298 @@ const whatsappNumber = '5592999999999';
 
 const services = {
   'analises-agua': {
-    eyebrow: 'Análises de Água',
-    title: 'Análises de água bruta e tratada com rigor técnico.',
-    subtitle: 'Ensaios laboratoriais para controle de qualidade, segurança de consumo e atendimento a padrões regulatórios.',
-    sectionTitle: 'Resultados claros para decisões seguras.',
-    description: 'Nossos laboratórios possuem estrutura moderna para análise de água bruta e tratada, atendendo aos padrões exigidos pelos órgãos regulatórios. O serviço apoia empresas, condomínios e operações que precisam comprovar qualidade da água com laudos objetivos e orientação técnica.',
+    mode: 'analises-agua',
+    eyebrow: 'Análises de água',
+    title: 'Potabilidade e rotina de controle com parâmetros definidos antes da coleta.',
+    subtitle: 'Amostragem, análise e orientação para água bruta, tratada, poços, reservatórios e pontos de consumo.',
+    briefing: {
+      audience: 'Condomínios, empresas, escolas, clínicas, hotéis, restaurantes e sistemas próprios.',
+      firstStep: 'Informar origem da água, finalidade da análise e prazo de uso do resultado.',
+      delivery: 'Laudo laboratorial, leitura técnica e orientação sobre próximos registros.',
+      budget: 'WhatsApp com local, tipo de água e urgência.'
+    },
+    diagnostic: [
+      {
+        title: 'Problema que resolve',
+        text: 'Define quais parâmetros analisar para comprovar qualidade, investigar alteração de cor, odor ou sabor e documentar segurança para consumo.'
+      },
+      {
+        title: 'Itens avaliados',
+        text: 'A seleção pode incluir parâmetros físico-químicos e microbiológicos conforme origem, uso pretendido e exigência regulatória.'
+      },
+      {
+        title: 'Entrega final',
+        text: 'O cliente recebe resultado organizado, interpretação objetiva e indicação do que precisa ser corrigido, repetido ou monitorado.'
+      },
+      {
+        title: 'Decisão apoiada',
+        text: 'Permite definir tratamento, liberar uso, ajustar rotina de limpeza ou apresentar evidência técnica quando solicitado.'
+      }
+    ],
     benefits: [
-      'Análises para água bruta, tratada, potável, poços e reservatórios.',
-      'Apoio na definição dos parâmetros adequados para cada demanda.',
-      'Laudos técnicos para documentação, controle e tomada de decisão.',
-      'Orientação especializada para interpretação dos resultados.'
+      'Escopo de análise definido pela demanda real, não por pacote genérico.',
+      'Orientação sobre quando repetir coleta ou ampliar parâmetros.',
+      'Documentação útil para gestores, síndicos e responsáveis por operação.',
+      'Leitura técnica para transformar resultado laboratorial em ação prática.'
     ],
     audience: [
-      'Empresas com rotina de controle de qualidade da água.',
-      'Condomínios, escolas, clínicas, hotéis e restaurantes.',
-      'Poços, reservatórios e sistemas próprios de abastecimento.',
-      'Gestores que precisam documentar segurança para consumo.'
+      'Água de poço, reservatório, rede interna ou ponto de consumo.',
+      'Rotinas que precisam comprovar potabilidade.',
+      'Ambientes coletivos com responsabilidade sanitária.',
+      'Operações que precisam decidir sobre tratamento ou manutenção.'
     ],
-    nextStep: 'Informe a origem da água, finalidade da análise, localização e se existe prazo regulatório ou operacional.',
-    whatsappText: 'Olá, gostaria de solicitar orçamento para Análises de Água.'
+    related: ['limpeza-reservatorios-laudo', 'filtros-reuso-agua', 'art-responsabilidade-tecnica'],
+    whatsappText: 'Olá, gostaria de solicitar orçamento para análises de água.'
   },
   'analises-efluentes': {
-    eyebrow: 'Análises de Efluentes',
-    title: 'Análises físico-químicas e biológicas de efluentes.',
-    subtitle: 'Diagnóstico técnico para tratamento, controle de poluição e conformidade ambiental.',
-    sectionTitle: 'Controle ambiental com dados confiáveis.',
-    description: 'Realizamos análises físico-químicas e biológicas para identificar características do efluente e apoiar as melhores soluções para tratamento e controle de poluição. O serviço ajuda a operação a acompanhar indicadores, reduzir riscos e organizar evidências ambientais.',
+    mode: 'analises-efluentes',
+    eyebrow: 'Análises de efluentes',
+    title: 'Controle ambiental com dados que apontam o ajuste operacional.',
+    subtitle: 'Ensaios físico-químicos e biológicos para caracterizar efluentes, acompanhar tratamento e organizar evidências ambientais.',
+    briefing: {
+      audience: 'Indústrias, operações comerciais, ETEs e empresas com descarte monitorado.',
+      firstStep: 'Informar atividade, tipo de efluente, ponto de coleta e frequência desejada.',
+      delivery: 'Resultados por parâmetro, leitura de tendência e orientação para controle.',
+      budget: 'WhatsApp com processo gerador, volume e histórico de laudos.'
+    },
+    diagnostic: [
+      {
+        title: 'Problema que resolve',
+        text: 'Ajuda a identificar carga poluidora, variações do processo e necessidade de correção antes que o descarte gere risco ambiental.'
+      },
+      {
+        title: 'Parâmetros possíveis',
+        text: 'A matriz pode envolver indicadores físico-químicos, biológicos e parâmetros específicos conforme operação e exigência do órgão competente.'
+      },
+      {
+        title: 'Entrega final',
+        text: 'Laudo com dados rastreáveis e orientação sobre leitura dos parâmetros críticos para a rotina da empresa.'
+      },
+      {
+        title: 'Decisão apoiada',
+        text: 'Permite ajustar tratamento, registrar conformidade, programar nova coleta ou revisar processo interno.'
+      }
+    ],
     benefits: [
-      'Ensaios para caracterização e acompanhamento de efluentes.',
-      'Apoio técnico para interpretação de parâmetros críticos.',
-      'Base para decisões de tratamento e controle de poluição.',
-      'Organização de resultados para rotinas de conformidade.'
+      'Monitoramento alinhado ao tipo de efluente e à operação.',
+      'Base técnica para tratamento, descarte e controle de poluição.',
+      'Organização de evidências para auditorias e exigências ambientais.',
+      'Leitura clara para gestores que precisam agir rápido.'
     ],
     audience: [
-      'Indústrias e empresas com geração de efluentes.',
-      'Operações com estações de tratamento de efluentes.',
-      'Gestores ambientais que precisam de suporte laboratorial.',
-      'Negócios que buscam previsibilidade e redução de risco ambiental.'
+      'Empresas com geração contínua ou eventual de efluentes.',
+      'Estações de tratamento que precisam acompanhar eficiência.',
+      'Gestores ambientais com prazos de reporte.',
+      'Operações que precisam reduzir risco documental.'
     ],
-    nextStep: 'Informe o tipo de efluente, atividade da empresa, frequência desejada e se já existem laudos anteriores.',
-    whatsappText: 'Olá, gostaria de solicitar orçamento para Análises de Efluentes.'
+    related: ['art-responsabilidade-tecnica', 'filtros-reuso-agua', 'analises-agua'],
+    whatsappText: 'Olá, gostaria de solicitar orçamento para análises de efluentes.'
   },
   'filtros-reuso-agua': {
-    eyebrow: 'Filtros e Reúso de Água',
-    title: 'Filtros e projetos de reúso dimensionados para sua demanda.',
-    subtitle: 'Soluções desenvolvidas a partir da análise da água, volume utilizado e necessidade doméstica ou industrial.',
-    sectionTitle: 'Eficiência hídrica com projeto orientado por análise.',
-    description: 'Desenvolvemos filtros e projetos de reúso de água considerando a análise da água, o volume de consumo e as necessidades do cliente. A solução pode atender demandas domésticas, corporativas ou industriais com foco em economia, segurança e uso racional dos recursos hídricos.',
+    mode: 'filtros-reuso-agua',
+    eyebrow: 'Filtros e reúso de água',
+    title: 'Tratamento dimensionado pelo uso, pela vazão e pelo resultado da água.',
+    subtitle: 'Filtros e projetos de reúso para aplicações domésticas, comerciais e industriais com avaliação técnica do ponto de partida.',
+    briefing: {
+      audience: 'Condomínios, hotéis, empresas, indústrias e clientes com alto consumo.',
+      firstStep: 'Enviar fonte da água, volume estimado, finalidade do reúso e foto do local.',
+      delivery: 'Recomendação técnica, configuração do filtro e orientação de operação.',
+      budget: 'WhatsApp com objetivo do tratamento e consumo aproximado.'
+    },
+    diagnostic: [
+      {
+        title: 'Problema que resolve',
+        text: 'Reduz desperdício e adequa a qualidade da água ao uso pretendido, sem escolher equipamento por aparência ou promessa genérica.'
+      },
+      {
+        title: 'Itens avaliados',
+        text: 'Origem da água, vazão necessária, parâmetros alterados, espaço de instalação e rotina de manutenção.'
+      },
+      {
+        title: 'Entrega final',
+        text: 'Indicação de equipamento, meios filtrantes, cuidados de operação e pontos que precisam ser confirmados por análise.'
+      },
+      {
+        title: 'Decisão apoiada',
+        text: 'Permite comprar, instalar ou redimensionar sistema com base em demanda, não em tentativa.'
+      }
+    ],
     benefits: [
-      'Avaliação técnica da água e da demanda de uso.',
-      'Projeto de filtros conforme volume, aplicação e qualidade desejada.',
-      'Orientação para reúso em rotinas domésticas, comerciais e industriais.',
-      'Apoio para reduzir desperdício e aumentar eficiência operacional.'
+      'Projeto orientado por análise e aplicação real.',
+      'Escolha de mídia filtrante compatível com o problema encontrado.',
+      'Apoio para reduzir consumo e melhorar previsibilidade de manutenção.',
+      'Possibilidade de atender rotinas residenciais, comerciais e industriais.'
     ],
     audience: [
-      'Indústrias com alto consumo de água.',
-      'Condomínios, hotéis, clubes e operações comerciais.',
-      'Empresas interessadas em reúso e redução de custos.',
-      'Clientes que precisam adequar qualidade da água a uma aplicação.'
+      'Operações com alto consumo de água.',
+      'Clientes interessados em reúso e economia operacional.',
+      'Sistemas com alteração de cor, odor, sabor, ferro ou turbidez.',
+      'Locais que precisam adequar água para uma finalidade específica.'
     ],
     filterProducts: [
       {
         title: "Filtro de fibra de vidro para caixa d'água 2.000 L/H com válvula semiautomática",
         image: '../assets/images/filtro1.png',
         imageAlt: "Filtro de fibra de vidro com válvula semiautomática para tratamento de água",
-        media: ['Zeólita para remoção de ferro e manganês', 'Dolomita', 'Carvão ativado'],
-        composition: [
-          '01 tanque de fibra de vidro',
-          '01 válvula semiautomática',
-          'Meio filtrante com zeólita para remoção de cor aparente, sólidos, turbidez, ferro e manganês',
-          'Carvão ativado para remoção de cloro, odor e sabor da água',
-          'Pressão de trabalho recomendada: entre 0,5 Kgf./cm² e 3 Kgf./cm²',
-          'Dimensões: altura 123 cm x largura 24 cm',
-          'Peso: 50,2 kg'
+        media: ['Zeólita', 'Dolomita', 'Carvão ativado'],
+        specs: [
+          'Tanque de fibra de vidro com válvula semiautomática.',
+          'Meio filtrante com zeólita para cor aparente, sólidos, turbidez, ferro e manganês.',
+          'Carvão ativado para redução de cloro, odor e sabor.',
+          'Pressão recomendada: 0,5 a 3 Kgf/cm².',
+          'Dimensões: 123 cm de altura por 24 cm de largura.',
+          'Peso aproximado: 50,2 kg.'
         ]
       },
       {
         title: "Filtro de fibra de vidro para caixa d'água 2.000 L/H com válvula automática",
         image: '../assets/images/filtro2.png',
         imageAlt: "Filtro de fibra de vidro com válvula automática para tratamento de água",
-        media: ['Zeólita para remoção de ferro e manganês', 'Dolomita', 'Carvão ativado com prata coloidal'],
-        composition: [
-          '01 tanque de fibra de vidro',
-          '01 válvula automática',
-          'Meio filtrante com zeólita para remoção de cor aparente, sólidos, turbidez, ferro e manganês',
-          'Carvão ativado para remoção de cloro, odor e sabor da água',
-          'Pressão de trabalho recomendada: entre 0,5 Kgf./cm² e 3 Kgf./cm²',
-          'Dimensões: altura 123 cm x largura 24 cm',
-          'Peso: 50,2 kg'
+        media: ['Zeólita', 'Dolomita', 'Carvão ativado com prata coloidal'],
+        specs: [
+          'Tanque de fibra de vidro com válvula automática.',
+          'Meio filtrante com zeólita para cor aparente, sólidos, turbidez, ferro e manganês.',
+          'Carvão ativado para redução de cloro, odor e sabor.',
+          'Pressão recomendada: 0,5 a 3 Kgf/cm².',
+          'Dimensões: 123 cm de altura por 24 cm de largura.',
+          'Peso aproximado: 50,2 kg.'
         ]
       }
     ],
-    nextStep: 'Envie a finalidade do reúso, volume estimado, fonte da água e objetivo do projeto.',
-    whatsappText: 'Olá, gostaria de solicitar orçamento para Filtros e Reúso de Água.'
+    related: ['analises-agua', 'analises-efluentes', 'limpeza-reservatorios-laudo'],
+    whatsappText: 'Olá, gostaria de solicitar orçamento para filtros e reúso de água.'
   },
   'art-responsabilidade-tecnica': {
-    eyebrow: 'ART Responsabilidade Técnica',
-    title: 'Responsabilidade técnica para operações que exigem respaldo profissional.',
-    subtitle: 'Emissão de ART e acompanhamento técnico para piscinas coletivas, processos industriais, alimentos, efluentes e estações de tratamento.',
-    sectionTitle: 'ART com escopo claro e documentação organizada.',
-    description: 'Emitimos ART e assumimos responsabilidade técnica em atividades que exigem acompanhamento profissional habilitado, incluindo piscinas coletivas, processos industriais, indústrias de alimentos, efluentes e estações de tratamento de água. O foco é reduzir risco documental e dar segurança técnica à operação.',
+    mode: 'art-responsabilidade-tecnica',
+    eyebrow: 'ART e responsabilidade técnica',
+    title: 'Responsabilidade técnica com escopo documentado e rotina acompanhada.',
+    subtitle: 'Emissão de ART e suporte para operações que precisam de profissional habilitado, registros e orientação técnica.',
+    briefing: {
+      audience: 'Piscinas coletivas, processos industriais, alimentos, efluentes e estações de tratamento.',
+      firstStep: 'Enviar atividade, endereço, urgência e documento solicitado pelo cliente ou fiscalizador.',
+      delivery: 'Escopo técnico, emissão de ART quando aplicável e orientação de registros.',
+      budget: 'WhatsApp com operação, risco e prazo.'
+    },
+    diagnostic: [
+      {
+        title: 'Problema que resolve',
+        text: 'Organiza a responsabilidade profissional quando a operação precisa comprovar acompanhamento técnico e reduzir risco documental.'
+      },
+      {
+        title: 'Itens avaliados',
+        text: 'Compatibilidade do escopo, rotina operacional, documentos existentes, requisitos do solicitante e limites de responsabilidade.'
+      },
+      {
+        title: 'Entrega final',
+        text: 'ART emitida quando aplicável, orientação sobre registros e definição do acompanhamento necessário.'
+      },
+      {
+        title: 'Decisão apoiada',
+        text: 'Ajuda o gestor a saber qual documento apresentar, qual rotina manter e o que precisa ser corrigido antes de assumir o escopo.'
+      }
+    ],
     benefits: [
-      'Emissão de ART para escopos compatíveis com a atuação técnica.',
-      'Apoio em documentação, registros e rotinas de controle.',
-      'Responsabilidade técnica para operações corporativas e coletivas.',
-      'Comunicação objetiva com gestores, administradoras e equipes.'
+      'Escopo claro antes da emissão da ART.',
+      'Apoio em registros, rotinas e evidências de controle.',
+      'Comunicação objetiva com gestores, administradoras e equipes.',
+      'Responsabilidade assumida dentro dos limites técnicos corretos.'
     ],
     audience: [
       'Condomínios com piscinas coletivas e sistemas hídricos.',
       'Indústrias de alimentos e processos industriais.',
-      'Operações com efluentes ou estações de tratamento de água.',
-      'Empresas que precisam comprovar responsabilidade técnica.'
+      'Operações com efluentes ou tratamento de água.',
+      'Empresas que receberam exigência documental.'
     ],
-    nextStep: 'Envie o tipo de operação, endereço, urgência e qual atividade precisa de responsabilidade técnica.',
-    whatsappText: 'Olá, gostaria de solicitar orçamento para ART Responsabilidade Técnica.'
+    related: ['controle-hidrossanitario-piscinas', 'analises-efluentes', 'analises-agua'],
+    whatsappText: 'Olá, gostaria de solicitar orçamento para ART e responsabilidade técnica.'
   },
   'controle-hidrossanitario-piscinas': {
-    eyebrow: 'Controle Hidrossanitário de Piscinas Coletivas',
-    title: 'Piscinas coletivas em conformidade com a vigilância sanitária.',
-    subtitle: 'Adequações, análises, registros e treinamento da equipe para manter a água dentro dos parâmetros exigidos.',
-    sectionTitle: 'Rotina técnica para segurança dos usuários.',
-    description: 'Atendendo à legislação, realizamos as adequações necessárias para piscinas coletivas, com análises e registros exigidos pela vigilância sanitária. Também treinamos a equipe para manter a água dentro dos parâmetros adequados no dia a dia.',
+    mode: 'controle-hidrossanitario-piscinas',
+    eyebrow: 'Piscinas coletivas',
+    title: 'Controle hidrossanitário para piscinas que recebem público todos os dias.',
+    subtitle: 'Análises, registros, adequações e treinamento para manter a água dentro dos parâmetros exigidos.',
+    briefing: {
+      audience: 'Condomínios, clubes, academias, escolas, hotéis e espaços de lazer.',
+      firstStep: 'Informar volume, frequência de uso, rotina atual e situação dos registros.',
+      delivery: 'Plano de controle, análises, orientação de adequação e treinamento.',
+      budget: 'WhatsApp com local, volume e urgência sanitária.'
+    },
+    diagnostic: [
+      {
+        title: 'Problema que resolve',
+        text: 'Evita que a piscina coletiva dependa de ajuste visual ou improvisado, criando rotina técnica para segurança dos usuários.'
+      },
+      {
+        title: 'Itens avaliados',
+        text: 'Qualidade da água, registros exigidos, produtos usados, frequência de medição, equipe responsável e necessidade de adequações.'
+      },
+      {
+        title: 'Entrega final',
+        text: 'Orientação técnica, análises, registros e treinamento para que a equipe saiba o que medir e quando agir.'
+      },
+      {
+        title: 'Decisão apoiada',
+        text: 'Permite corrigir rotina, responder à vigilância sanitária e manter evidências de controle.'
+      }
+    ],
     benefits: [
-      'Avaliação técnica da piscina coletiva e rotina atual.',
-      'Análises e registros exigidos pela vigilância sanitária.',
-      'Orientação para adequações e manutenção preventiva.',
-      'Treinamento da equipe responsável pelo controle da água.'
+      'Rotina técnica para ambientes coletivos.',
+      'Treinamento da equipe que mede e registra a água.',
+      'Apoio para adequações solicitadas pela vigilância sanitária.',
+      'Redução de risco para usuários, síndicos e administradoras.'
     ],
     audience: [
-      'Condomínios residenciais e comerciais.',
-      'Clubes, academias, escolas, hotéis e espaços de lazer.',
-      'Administradoras que precisam reduzir risco sanitário.',
-      'Equipes de manutenção que precisam padronizar rotinas.'
+      'Piscinas de condomínios residenciais e comerciais.',
+      'Clubes, academias e escolas.',
+      'Hotéis e espaços de lazer com uso recorrente.',
+      'Equipes que precisam padronizar medição e registro.'
     ],
-    nextStep: 'Informe o local, volume aproximado da piscina, frequência de uso e situação atual dos registros.',
-    whatsappText: 'Olá, gostaria de solicitar orçamento para Controle Hidrossanitário de Piscinas Coletivas.'
+    related: ['art-responsabilidade-tecnica', 'analises-agua', 'limpeza-reservatorios-laudo'],
+    whatsappText: 'Olá, gostaria de solicitar orçamento para controle hidrossanitário de piscinas coletivas.'
   },
   'limpeza-reservatorios-laudo': {
-    eyebrow: 'Limpeza de Reservatórios com Laudo Técnico',
-    title: 'Limpeza de reservatórios de água com emissão de certificado.',
-    subtitle: 'Serviço técnico para limpeza, análise e documentação exigida por órgãos fiscalizadores.',
-    sectionTitle: 'Reservatórios limpos, documentados e prontos para fiscalização.',
-    description: 'Nossa equipe realiza a limpeza de reservatórios de água, analisa as condições encontradas e emite o certificado de limpeza exigido pelos órgãos fiscalizadores. O serviço apoia a segurança hídrica e a organização documental de empresas e condomínios.',
+    mode: 'limpeza-reservatorios-laudo',
+    eyebrow: 'Reservatórios e laudo técnico',
+    title: 'Limpeza de reservatórios com registro técnico para fiscalização e rotina.',
+    subtitle: 'Serviço de limpeza, análise e certificado para empresas, condomínios e estabelecimentos de uso coletivo.',
+    briefing: {
+      audience: 'Condomínios, escolas, clínicas, restaurantes, hotéis, clubes e empresas.',
+      firstStep: 'Informar quantidade, capacidade, acesso e última data de limpeza.',
+      delivery: 'Limpeza, orientação de periodicidade, análise quando necessária e certificado.',
+      budget: 'WhatsApp com fotos do local e capacidade aproximada.'
+    },
+    diagnostic: [
+      {
+        title: 'Problema que resolve',
+        text: 'Mantém reservatórios em condição sanitária adequada e documenta o serviço para rotina interna ou fiscalização.'
+      },
+      {
+        title: 'Itens avaliados',
+        text: 'Acesso, volume, condição visual, histórico de manutenção, necessidade de análise e documentação exigida.'
+      },
+      {
+        title: 'Entrega final',
+        text: 'Limpeza executada, certificado ou laudo técnico do serviço e orientação sobre próxima periodicidade.'
+      },
+      {
+        title: 'Decisão apoiada',
+        text: 'Ajuda a planejar manutenção, comprovar cuidado sanitário e decidir se a água precisa de análise complementar.'
+      }
+    ],
     benefits: [
-      'Limpeza técnica de reservatórios de água.',
-      'Emissão de certificado ou laudo técnico do serviço realizado.',
-      'Apoio para atender exigências de fiscalização.',
-      'Orientação sobre periodicidade e cuidados preventivos.'
+      'Documentação organizada após a limpeza.',
+      'Apoio para exigências de fiscalização e rotina sanitária.',
+      'Orientação sobre periodicidade e cuidados preventivos.',
+      'Integração com análise de água quando o contexto exige.'
     ],
     audience: [
-      'Condomínios, empresas, escolas, clínicas e restaurantes.',
-      'Hotéis, clubes e estabelecimentos com reservatórios de uso coletivo.',
-      'Gestores que precisam manter documentação atualizada.',
-      'Operações que buscam segurança sanitária e hídrica.'
+      'Reservatórios de uso coletivo.',
+      'Empresas e condomínios com calendário de manutenção.',
+      'Estabelecimentos sujeitos à fiscalização.',
+      'Gestores que precisam comprovar limpeza recente.'
     ],
-    nextStep: 'Informe quantidade de reservatórios, capacidade aproximada, localização e última data de limpeza.',
-    whatsappText: 'Olá, gostaria de solicitar orçamento para Limpeza de Reservatórios com Laudo Técnico.'
+    related: ['analises-agua', 'controle-hidrossanitario-piscinas', 'art-responsabilidade-tecnica'],
+    whatsappText: 'Olá, gostaria de solicitar orçamento para limpeza de reservatórios com laudo técnico.'
   }
 };
 
@@ -170,45 +306,80 @@ function getSelectedService() {
   return params.get('servico') || 'analises-agua';
 }
 
-function renderCheckList(container, items, className) {
-  container.innerHTML = items.map((item) => `
-    <li class="${className}">
-      <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-waterGreen text-white">
-        <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-        </svg>
-      </span>
+function renderBriefing(service) {
+  const briefing = document.getElementById('serviceBriefing');
+  if (!briefing) return;
+
+  briefing.innerHTML = `
+    <dl>
+      <div>
+        <dt>Indicado para</dt>
+        <dd>${service.briefing.audience}</dd>
+      </div>
+      <div>
+        <dt>Primeiro passo</dt>
+        <dd>${service.briefing.firstStep}</dd>
+      </div>
+      <div>
+        <dt>Entrega</dt>
+        <dd>${service.briefing.delivery}</dd>
+      </div>
+      <div>
+        <dt>Para orçar</dt>
+        <dd>${service.briefing.budget}</dd>
+      </div>
+    </dl>
+  `;
+}
+
+function renderDiagnostic(service) {
+  const container = document.getElementById('serviceDiagnostic');
+  if (!container) return;
+
+  container.innerHTML = service.diagnostic.map((item) => `
+    <article class="diagnostic-item reveal">
+      <h3>${item.title}</h3>
+      <p>${item.text}</p>
+    </article>
+  `).join('');
+}
+
+function renderBenefits(service) {
+  const container = document.getElementById('serviceBenefits');
+  if (!container) return;
+
+  container.innerHTML = service.benefits.map((item) => `<li>${item}</li>`).join('');
+}
+
+function renderAudience(service) {
+  const container = document.getElementById('serviceAudience');
+  if (!container) return;
+
+  container.innerHTML = service.audience.map((item) => `
+    <li class="technical-row">
+      <strong>Uso</strong>
       <span>${item}</span>
     </li>
   `).join('');
 }
 
-function renderBenefitCards(container, items) {
-  container.innerHTML = items.map((item) => `
-    <div class="flex gap-3 rounded-lg bg-iceWhite p-5 leading-7 text-graphite/78">
-      <span class="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-waterGreen text-white">
-        <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-        </svg>
-      </span>
-      <span>${item}</span>
-    </div>
-  `).join('');
-}
-
-function renderRelatedServices(activeSlug) {
+function renderRelatedServices(activeSlug, service) {
   const relatedContainer = document.getElementById('relatedServices');
-  const cards = Object.entries(services)
-    .filter(([slug]) => slug !== activeSlug)
-    .map(([slug, service]) => `
-      <a href="./servico.html?servico=${slug}" class="rounded-lg bg-white p-6 shadow-sm ring-1 ring-deepBlue/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-        <p class="text-sm font-bold uppercase tracking-wide text-waterGreen">${service.eyebrow}</p>
-        <h3 class="mt-3 font-heading text-xl font-semibold text-deepBlue">${service.title}</h3>
-        <p class="mt-3 leading-7 text-graphite/72">${service.subtitle}</p>
-      </a>
-    `);
+  if (!relatedContainer) return;
 
-  relatedContainer.innerHTML = cards.join('');
+  const relatedSlugs = service.related || Object.keys(services).filter((slug) => slug !== activeSlug).slice(0, 3);
+  relatedContainer.innerHTML = relatedSlugs.map((slug) => {
+    const related = services[slug];
+    return `
+      <a href="./servico.html?servico=${slug}" class="related-line">
+        <span>
+          <strong>${related.eyebrow}</strong>
+          <span>${related.subtitle}</span>
+        </span>
+        <span class="service-arrow">→</span>
+      </a>
+    `;
+  }).join('');
 }
 
 function renderFilterDetails(service, ctaLink) {
@@ -223,29 +394,27 @@ function renderFilterDetails(service, ctaLink) {
   section.classList.remove('hidden');
   cta.href = ctaLink;
   productsContainer.innerHTML = service.filterProducts.map((product) => `
-    <article class="overflow-hidden rounded-lg bg-white shadow-sm ring-1 ring-deepBlue/5 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
-      <div class="bg-iceWhite p-6">
-        <img src="${product.image}" alt="${product.imageAlt}" class="mx-auto h-72 w-full object-contain" loading="lazy" />
+    <article class="filter-product reveal">
+      <div class="filter-product-media">
+        <img src="${product.image}" alt="${product.imageAlt}" loading="lazy" />
       </div>
-      <div class="p-7">
-      <h3 class="font-heading text-2xl font-semibold text-deepBlue">${product.title}</h3>
-      <div class="mt-6 flex flex-wrap gap-2">
-        ${product.media.map((item) => `
-          <span class="rounded-full bg-iceWhite px-3 py-1 text-xs font-bold uppercase tracking-wide text-deepBlue ring-1 ring-deepBlue/10">${item}</span>
-        `).join('')}
-      </div>
-      <h4 class="mt-7 font-heading text-lg font-semibold text-deepBlue">Sistema de tratamento composto por:</h4>
-      <ul class="mt-4 space-y-3">
-        ${product.composition.map((item) => `
-          <li class="flex gap-3 leading-7 text-graphite/75">
-            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-waterGreen"></span>
-            <span>${item}</span>
-          </li>
-        `).join('')}
-      </ul>
+      <div class="p-6 sm:p-8">
+        <p class="section-kicker">Equipamento</p>
+        <h3 class="mt-3 font-heading text-2xl font-semibold leading-tight text-deepBlue">${product.title}</h3>
+        <div class="media-tags mt-5">
+          ${product.media.map((item) => `<span>${item}</span>`).join('')}
+        </div>
+        <ul class="spec-table">
+          ${product.specs.map((item) => `<li>${item}</li>`).join('')}
+        </ul>
       </div>
     </article>
   `).join('');
+}
+
+function observeNewRevealItems() {
+  const event = new CustomEvent('refresh-reveal');
+  window.dispatchEvent(event);
 }
 
 function renderServicePage() {
@@ -254,23 +423,23 @@ function renderServicePage() {
   const service = services[activeSlug];
   const ctaLink = createWhatsappLink(service.whatsappText);
 
+  document.body.classList.add(`service-mode-${service.mode}`);
   document.title = `${service.eyebrow} | Água Doce ART & Soluções Hídricas`;
   document.getElementById('serviceEyebrow').textContent = service.eyebrow;
   document.getElementById('serviceTitle').textContent = service.title;
   document.getElementById('serviceSubtitle').textContent = service.subtitle;
-  document.getElementById('serviceSectionTitle').textContent = service.sectionTitle;
-  document.getElementById('serviceDescription').textContent = service.description;
-  document.getElementById('serviceNextStep').textContent = service.nextStep;
-
   document.getElementById('serviceCta').href = ctaLink;
   document.getElementById('headerCta').href = ctaLink;
   document.getElementById('mobileHeaderCta').href = ctaLink;
   document.getElementById('footerCta').href = ctaLink;
 
-  renderBenefitCards(document.getElementById('serviceBenefits'), service.benefits);
-  renderCheckList(document.getElementById('serviceAudience'), service.audience, 'flex gap-3 leading-7 text-graphite/78');
+  renderBriefing(service);
+  renderDiagnostic(service);
+  renderBenefits(service);
+  renderAudience(service);
   renderFilterDetails(service, ctaLink);
-  renderRelatedServices(activeSlug);
+  renderRelatedServices(activeSlug, service);
+  observeNewRevealItems();
 }
 
 renderServicePage();

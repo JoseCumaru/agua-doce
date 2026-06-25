@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Serviços técnicos da Água Doce ART & Soluções Hídricas para ART, efluentes, água potável e piscinas." />
+  <meta name="description" content="Serviços técnicos da Água Doce ART & Soluções Hídricas para ART, efluentes, água potável, filtros, reservatórios e piscinas." />
   <title>Serviço | Água Doce ART & Soluções Hídricas</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../assets/css/styles.css" />
 </head>
 
-<body class="bg-white font-body text-graphite antialiased">
+<body class="service-shell font-body text-graphite antialiased">
   <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-deepBlue/82 backdrop-blur-xl">
     <nav class="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8" aria-label="Menu principal">
       <a href="../index.html#inicio" class="flex items-center gap-3" aria-label="Água Doce ART & Soluções Hídricas">
@@ -67,65 +67,75 @@
   </header>
 
   <main>
-    <section data-header-trigger class="relative min-h-[72svh] overflow-hidden bg-deepBlue pt-28 text-white">
-      <div class="service-hero-background absolute inset-0 bg-cover bg-center opacity-30" aria-hidden="true"></div>
-      <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,28,45,0.98)_0%,rgba(11,60,93,0.9)_55%,rgba(11,60,93,0.45)_100%)]" aria-hidden="true"></div>
-      <div class="relative mx-auto flex min-h-[calc(72svh-7rem)] max-w-7xl flex-col justify-end px-4 pb-14 sm:px-6 lg:px-8">
-        <a href="../index.html#servicos" class="mb-10 inline-flex w-fit items-center gap-2 font-heading text-sm font-bold uppercase text-white/74 transition hover:text-white">
-          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
-          </svg>
-          Voltar para serviços
-        </a>
-        <div class="max-w-4xl reveal">
+    <section data-header-trigger class="service-hero text-white">
+      <div class="relative z-10 mx-auto grid min-h-[calc(76svh-7rem)] max-w-7xl items-end gap-10 px-4 pb-12 sm:px-6 lg:grid-cols-[1fr_26rem] lg:px-8">
+        <div class="reveal">
+          <a href="../index.html#servicos" class="mb-8 inline-flex w-fit items-center gap-2 font-heading text-sm font-bold uppercase text-white/74 transition hover:text-white">
+            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>
+            Voltar para serviços
+          </a>
           <p id="serviceEyebrow" class="eyebrow text-turquoise">Serviço técnico</p>
-          <h1 id="serviceTitle" class="mt-4 font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">Carregando serviço...</h1>
-          <p id="serviceSubtitle" class="mt-6 max-w-3xl text-lg leading-8 text-white/80 sm:text-xl"></p>
+          <h1 id="serviceTitle" class="mt-4 max-w-4xl font-heading text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl">Carregando serviço...</h1>
+          <p id="serviceSubtitle" class="mt-6 max-w-3xl text-lg leading-8 text-white/78 sm:text-xl"></p>
           <div class="mt-9 flex flex-col gap-4 sm:flex-row">
             <a id="serviceCta" href="https://wa.me/5592999999999" class="btn btn-primary">Solicitar Orçamento</a>
             <a href="../index.html#precos" class="btn btn-ghost">Ver tabela B2C</a>
           </div>
         </div>
+
+        <aside id="serviceBriefing" class="service-brief glass-panel reveal delay-1" aria-label="Resumo técnico do serviço"></aside>
       </div>
     </section>
 
     <section class="section bg-white">
-      <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:px-8">
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+        <div class="sticky-copy reveal">
+          <p class="section-kicker">Diagnóstico</p>
+          <h2 class="section-title mt-3">O serviço começa pelo que precisa ser decidido.</h2>
+          <p class="mt-5 text-lg leading-8 text-graphite/72">
+            O escopo é organizado para responder quatro pontos: o problema, os itens avaliados, a entrega e a decisão que o cliente consegue tomar.
+          </p>
+        </div>
+
+        <div id="serviceDiagnostic" class="diagnostic-grid"></div>
+      </div>
+    </section>
+
+    <section class="section bg-iceWhite">
+      <div class="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:px-8">
         <article class="reveal">
-          <p class="eyebrow text-waterGreen">Como funciona</p>
-          <h2 id="serviceSectionTitle" class="section-title mt-3"></h2>
-          <p id="serviceDescription" class="mt-6 text-lg leading-8 text-graphite/76"></p>
-          <div class="mt-10 grid gap-4 sm:grid-cols-2" id="serviceBenefits"></div>
+          <p class="section-kicker">Benefícios práticos</p>
+          <h2 class="section-title mt-3">Menos dúvida entre resultado, documento e rotina.</h2>
+          <ul id="serviceBenefits" class="benefit-list mt-10"></ul>
         </article>
 
-        <aside class="service-detail-panel reveal delay-1">
-          <h2 class="font-heading text-2xl font-bold text-deepBlue">Indicado para</h2>
-          <ul id="serviceAudience" class="mt-6 space-y-4"></ul>
-          <div class="mt-8 border-t border-deepBlue/10 pt-6">
-            <p class="eyebrow text-waterGreen">Próximo passo</p>
-            <p id="serviceNextStep" class="mt-3 leading-7 text-graphite/75"></p>
-          </div>
+        <aside class="reveal delay-1">
+          <p class="section-kicker">Situações comuns</p>
+          <h2 class="mt-3 font-heading text-2xl font-bold text-deepBlue">Quando esse escopo costuma entrar</h2>
+          <ul id="serviceAudience" class="technical-list mt-7"></ul>
         </aside>
       </div>
     </section>
 
-    <section id="filterDetailsSection" class="hidden section bg-iceWhite">
+    <section id="filterDetailsSection" class="hidden section mineral-surface technical-grid">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl reveal">
-          <p class="eyebrow text-waterGreen">Principais filtros</p>
-          <h2 class="section-title mt-3">Filtros mistos para água</h2>
+          <p class="section-kicker">Filtros em destaque</p>
+          <h2 class="section-title mt-3">Equipamentos aparecem depois do diagnóstico da água.</h2>
           <p class="mt-5 text-lg leading-8 text-graphite/72">
-            Opções de tratamento dimensionadas conforme análise da água, vazão necessária e aplicação do cliente.
+            Os filtros mistos abaixo são opções de tratamento, mas a indicação depende de origem da água, vazão necessária e parâmetros encontrados.
           </p>
         </div>
 
-        <div id="filterProducts" class="mt-12 grid gap-6 lg:grid-cols-2"></div>
+        <div id="filterProducts" class="mt-12 grid gap-8"></div>
 
         <div class="statement-band mt-10 reveal">
           <div>
             <p class="eyebrow text-turquoise">Orçamento técnico</p>
-            <h3 class="mt-2 font-heading text-2xl font-bold text-white">Estamos disponíveis para orçamento sem compromisso</h3>
-            <p class="mt-3 max-w-2xl leading-7 text-white/72">Envie a necessidade do seu sistema para avaliarmos a configuração mais adequada.</p>
+            <h3 class="mt-2 font-heading text-2xl font-bold text-white">Envie a água, o uso e o volume antes de escolher o filtro.</h3>
+            <p class="mt-3 max-w-2xl leading-7 text-white/72">A configuração correta depende do problema que o tratamento precisa resolver.</p>
           </div>
           <a id="filterDetailsCta" href="https://wa.me/5592999999999" class="btn btn-light">Solicitar orçamento</a>
         </div>
@@ -135,10 +145,10 @@
     <section class="section bg-white">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl reveal">
-          <p class="eyebrow text-waterGreen">Outras soluções</p>
-          <h2 class="section-title mt-3">Veja também</h2>
+          <p class="section-kicker">Próximo escopo possível</p>
+          <h2 class="section-title mt-3">Serviços que costumam se conectar a esta demanda.</h2>
         </div>
-        <div id="relatedServices" class="mt-10 grid gap-6 md:grid-cols-3"></div>
+        <div id="relatedServices" class="related-strip mt-10"></div>
       </div>
     </section>
   </main>
